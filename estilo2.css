@@ -1,0 +1,70 @@
+/* Estilos gerais para HTML e Body */
+html, body {
+    height: 100%; /* Faz com que o HTML e o Body ocupem 100% da altura da tela */
+}
+
+/* Estilos para o Body */
+body {
+    background-color: rgb(5, 67, 67); /* Define a cor de fundo do body como um tom de azul escuro */
+    margin: 0; /* Remove as margens padrão do body para evitar espaços indesejados */
+    padding: 32px; /* Adiciona um preenchimento de 32px ao body (mas será sobrescrito pela linha abaixo) */
+    padding: 0; /* Remove o preenchimento padrão do body, sobrescrevendo o valor anterior */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Define a família de fontes padrão para o body */
+
+    /* Centraliza o conteúdo vertical e horizontalmente */
+    display: flex; /* Ativa o modelo de layout flexível */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    flex-direction: column; /* Alinha os itens em coluna (um abaixo do outro) */
+}
+
+/* Estilo para o título principal */
+.main-title {
+    color: white; /* Define a cor do texto como branco */
+    font-size: 30px; /* Define o tamanho da fonte como 30 pixels */
+}
+
+/* Estilo para a lista */
+.list {
+    width: 90%; /* Define a largura da lista como 90% da largura do container pai */
+    max-width: 960px; /* Define uma largura máxima de 960 pixels para a lista */
+    display: flex; /* Ativa o modelo de layout flexível para a lista */
+    flex-wrap: wrap; /* Permite que os itens da lista quebrem para a próxima linha se não couberem */
+    justify-content: center; /* Centraliza os itens da lista horizontalmente */
+    gap: 16px; /* Define um espaçamento de 16 pixels entre os itens da lista */
+    list-style-type: none; /* Remove os marcadores padrão de lista (bolinhas, números, etc.) */
+}
+
+/* Estilo para cada item da lista */
+.list-item {
+    flex-basis: 280px; /* Define a largura base de cada item da lista como 280 pixels */
+    background-color: white; /* Define a cor de fundo de cada item da lista como branco */
+    border-radius: 5px; /* Adiciona bordas arredondadas com raio de 5 pixels */
+    text-align: center; /* Centraliza o texto dentro de cada item da lista */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave ao redor de cada item */
+    background-image: url(imagens/thumb05.jpg); /* Define uma imagem de fundo para o item da lista */
+    background-size: 100%; /* Faz a imagem de fundo cobrir 100% da largura do item */
+    background-repeat: no-repeat; /* Impede que a imagem de fundo se repita */
+}
+
+/* Estilo para a imagem dentro do item da lista */
+.list-item__imagem img {
+    border-radius: 50%; /* Transforma a imagem em um círculo (com bordas arredondadas de 50%) */
+    width: 80px; /* Define a largura da imagem como 80 pixels */
+    margin-top: 120px; /* Adiciona uma margem superior de 120 pixels para posicionar a imagem */
+}
+
+/* Estilo para o nome do item da lista */
+.list-item-name {
+    margin: 0; /* Remove as margens padrão do elemento */
+    font-size: 24px; /* Define o tamanho da fonte como 24 pixels */
+    color: #385555; /* Define a cor do texto como um tom de azul esverdeado */
+}
+
+/* Estilo para as ações do item da lista */
+.list-item__action {
+    display: flex; /* Ativa o modelo de layout flexível para as ações */
+    background-color: #e5e5e5; /* Define a cor de fundo das ações como cinza claro */
+    padding: 16px; /* Adiciona um preenchimento interno de 16 pixels */
+    justify-content: space-evenly; /* Distribui os itens das ações uniformemente no espaço disponível */
+}
